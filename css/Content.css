@@ -1,0 +1,440 @@
+ h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+ 
+ .TituloFicha {
+    margin: 0;
+    background-color: rgba(0,0,0,.4);
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 15px;
+    position: relative;
+    z-index: 2;
+    color: rgba(255,255,255,.5);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.Background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30%;
+    background-size: cover;
+    z-index: 1;
+    box-shadow: inset 0 0 100px #000;
+    background-position: center;
+    margin-top: 5%;
+}
+
+.FichaPresentacion>.Background:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .4;
+    content: '';
+}
+
+*:not(.fas) {
+    font-family: "Open Sans", sans-serif;
+}
+
+.Container {
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    background-color: white;
+}
+
+.Sidebar {
+    flex: 1;
+}
+
+.Main {
+    flex: 2;
+}
+
+.Contenedor>.Sidebar {
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    max-width: 100%;
+}
+
+.AnimeCover {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: 110px;
+}
+
+.AnimeCover .Image {
+    margin-bottom: 0;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto 15px;
+}
+
+.AnimeCover .Image figure {
+    padding-top: 142.30769230769232%;
+}
+
+.AnimeCover .Image figure img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.AnimeStatus, .BtnNw.Rcmndr {
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 30px 0 rgba(0,0,0,.15);
+    background-color: #00c853;
+    color: #fff;
+    text-align: center;
+    line-height: 44px;
+    margin-bottom: 10px;
+}
+
+.AnimeStatus span, .BtnNw.Rcmndr span {
+    display: block;
+    position: relative;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 100%);
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.ListAnmBnts {
+    margin: 0 -5px;
+}
+
+.ClFx:before, .ClFx:after {
+    content: "";
+    display: table;
+}
+
+.ListAnmBnts>li {
+    padding: 0 5px;
+    float: left;
+    width: 50%;
+}
+
+.BtnNw {
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    padding: 13px 10px 13px 50px;
+    font-size: 12px;
+    line-height: 12px;
+    display: block!important;
+    margin-bottom: 10px;
+    color: #000;
+}
+.BxSdw {
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+}
+
+.BtnNw span {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.BtnNw:before {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin-right: 0;
+    transition: .2s;
+}
+
+.BtnNw.AdFv.B:before {
+    background-color: transparent;
+    color: #fb3447;
+    box-shadow: inset 0 0 0 1px #fb3447;
+}
+
+.BtnNw.AdFv:before, .BtnNw.AdFv.B:hover:before {
+    background-color: #fb3447;
+    color: #fff;
+}
+
+.BtnNw.Fllw.B:before {
+    background-color: transparent;
+    color: #14bbf0;
+    box-shadow: inset 0 0 0 1px #14bbf0;
+}
+
+.BtnNw.Fllw:before, .BtnNw.Fllw.B:hover:before {
+    background-color: #14bbf0;
+    color: #fff;
+}
+
+.BtnNw.Pndng {
+    line-height: 24px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.BtnNw.Pndng:before {
+    color: #ffc107;
+    box-shadow: inset 0 0 0 1px #ffc107;
+}
+
+.WdgtCn {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+    padding: 15px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.WdgtCn .Top {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.WdgtCn .Top .Title:last-child {
+    margin-bottom: 0;
+}
+.WdgtCn .Top .Title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -1px;
+}
+
+.WdgtCn .Description>*:last-child {
+    margin-bottom: 0;
+}
+
+.Nvgnrs {
+    margin-bottom: 5px;
+    font-size: 0;
+}
+
+.Nvgnrs a, .CatLnk {
+    background-color: rgba(1,188,242,.1);
+    color: #01bcf2;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    line-height: 25px;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.WdgtCn .Description {
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.Description {
+    font-size: 12px;
+}
+
+.ListAnmRel {
+    margin: 0 -20px -5px;
+    border-top: 1px solid #efefef;
+    padding: 10px 20px 0;
+}
+
+.ListAnmRel>li {
+    line-height: 25px;
+    color: #666;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.lstopt-frm {
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
+
+.order-lst {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[type=checkbox] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+}
+
+.order-lst input+.btn, .order-lst input:checked+.btn+.btn {
+    display: block;
+}
+
+.order-lst i {
+    margin-right: 5px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.lstopt-frm .btn {
+    background-color: #01bcf3;
+    border: 0;
+    height: 34px;
+}
+
+.order-lst .btn {
+    line-height: 20px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.lstopt-frm:after {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    content: "";
+}
+
+.ListCaps {
+    margin: -15px -20px -20px;
+    display: block;
+}
+
+.ListCaps>li {
+    border-bottom: 1px solid #efefef;
+    position: relative;
+    padding-left: 50px;
+}
+
+.ListCaps>li.Next:before, .ListCaps>li.Next .Title {
+    color: #00b046;
+}
+
+.ListCaps>li:before {
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #00bcf2;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.ListCaps {
+    max-height: 1000px;
+    overflow-y: auto;
+}
+
+.ListCaps>li.Next>a {
+    padding-top: 40px;
+}
+
+.ListCaps>li>a {
+    display: block;
+    padding: 30px 20px 30px 125px;
+    min-height: 100px;
+}
+
+.ListCaps>li.Next .Date {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 20px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #00b046;
+    font-weight: 700;
+    height: 30px;
+}
+
+a[class*=fa-], span[class*=fa-], strong[class*=fa-], i[class*=fa-] {
+    display: inline-block;
+}
+
+.ListCaps>li.Next .Date:before {
+    float: right;
+    margin-left: 10px;
+    font-size: 30px;
+    opacity: .2;
+}
